@@ -6,6 +6,7 @@
     justify-content: center;//Columnwise
     display: flex;
     letter-spacing: .3rem;
+    transition: 0.6s;
 } 
 
 @mixin commntext($f-sz,$lt-sp,$tx-tr) //This is Pass the Variable

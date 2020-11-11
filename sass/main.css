@@ -1,16 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 62.25%;
-}
-
 .sticky {
   background-color: blanchedalmond;
+  padding: 20px 100px;
+  position: fixed;
 }
 
 nav {
@@ -30,7 +21,7 @@ nav {
           align-items: center;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  padding: 20px 100px;
+  padding: 30px 100px;
   background-color: transparent;
 }
 
@@ -93,6 +84,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   letter-spacing: .3rem;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   background-color: #10ac84;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -131,6 +124,17 @@ header p:hover {
 
 header p:hover::after {
   content: "SCSS/SASS.";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.25%;
 }
 
 .banner {

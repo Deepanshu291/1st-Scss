@@ -1,0 +1,58 @@
+//Navbar
+
+.sticky{
+    background-color: blanchedalmond;
+    padding: 20px 100px;  
+    position: fixed; 
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 100px;
+    background-color: transparent;
+
+    .logo{
+        position: relative;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        transition: 0.6s;
+        letter-spacing: 0.2rem;
+    }
+    ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        li{
+            position: relative;
+            list-style: none;
+
+            a{
+                font-size: 1.8rem;
+                position: relative;
+                margin: 1rem;
+                text-decoration: none;
+                color: black;
+                letter-spacing: 0.2rem;
+                font-weight: 50rem;
+                transition: 0.6s;
+
+                &:hover{
+                    color: #576574;
+                }
+            }
+        }
+    }
+}

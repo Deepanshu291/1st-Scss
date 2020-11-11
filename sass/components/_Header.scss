@@ -1,0 +1,36 @@
+//Header:-
+
+header{
+    width: 100%;
+    height: 50vh;
+    @include flexp(); // By _mixin.scss
+    background-color: $bg-color;
+    flex-direction: column;
+
+    //3: Nesting.
+
+    h1{
+       @include commntext(5rem,0.5rem, uppercase);////Calling Function with variable Font-size,Letter-spacing 
+        &:hover{
+            color: azure;
+            font-size: 7rem;
+            &::after{
+                content: " Sass/Scss";
+            }
+        }
+       
+    }
+      
+     p{ 
+        @include commntext(0,0, capitalize); //Calling Function.
+        &:hover{
+            color: azure;
+            &::after{
+                content: "SCSS/SASS.";
+            }
+        }
+        
+    }
+      
+    //This is Nesting 
+}//Sec-1

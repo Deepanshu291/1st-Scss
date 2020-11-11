@@ -1,0 +1,65 @@
+//   Index:
+
+//1. Operators.
+//2. Variables.
+//3. Nesting.
+//4. mixin
+//5. Paramiter
+   //a) Pass the Variable.
+   //b) Call Function.
+//6. Partials.
+
+//  Use Partials :-
+
+@import "mixin";
+@import "var";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.25%;
+}
+
+.sec-1{
+    width: 100vw;
+    height: 100vh;
+    @include flexp(); // By _mixin.scss
+    background-color: $bg-color;
+
+    //3: Nesting.
+
+    h1{
+       @include commntext(5rem,0.5rem, uppercase);////Calling Function with variable Font-size,Letter-spacing 
+        &:hover{
+            color: azure;
+            font-size: 7rem;
+            &::after{
+                content: " Sass/Scss";
+            }
+        }
+       
+    }
+      
+     p{ 
+        @include commntext(0,0, capitalize); //Calling Function.
+        &:hover{
+            color: azure;
+            &::after{
+                content: "SCSS/SASS.";
+            }
+        }
+      button{
+          box-sizing: border-box;
+          width: 30vw;
+      }  
+        
+    }
+      
+    //This is Nesting 
+}//Sec-1
+
+ 

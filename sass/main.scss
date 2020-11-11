@@ -28,7 +28,7 @@ html{
     width: 100vw;
     height: 100vh;
     @include flexp(); // By _mixin.scss
-    background-color: $bg-color;
+    background-color: $bg-color2;
 
     //3: Nesting.
 
@@ -52,10 +52,6 @@ html{
                 content: "SCSS/SASS.";
             }
         }
-      button{
-          box-sizing: border-box;
-          width: 30vw;
-      }  
         
     }
       

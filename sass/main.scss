@@ -28,7 +28,7 @@ html{
     width: 100vw;
     height: 100vh;
     @include flexp(); // By _mixin.scss
-    background-color: $bg-color2;
+    background-color: $bg-color;
 
     //3: Nesting.
 

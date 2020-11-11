@@ -61,10 +61,4 @@ html {
 .sec-1 p:hover::after {
   content: "SCSS/SASS.";
 }
-
-.sec-1 p button {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 30vw;
-}
 /*# sourceMappingURL=main.css.map */

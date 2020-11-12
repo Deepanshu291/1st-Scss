@@ -1,0 +1,21 @@
+
+.fl_soc_ic{
+    position: fixed;
+    width: 5rem;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    
+        a{
+            @include flexp(inline);
+            font-size: 4rem;
+            color: $Pr-text-cl;
+
+            &:hover{
+                color: $Pr-text-hov;
+            }
+        }
+    
+}

@@ -7,11 +7,14 @@
     }
 
     nav{
-        .logo i{
+
+        .logo {
             font-size: 4rem;
             text-align: center;
 
-            
+            .fas{
+                font-size: 5rem;
+            }
         }
         ul{
             // display: none;

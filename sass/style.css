@@ -115,9 +115,12 @@ nav ul li a:hover {
   .active {
     left: 0;
   }
-  nav .logo i {
+  nav .logo {
     font-size: 4rem;
     text-align: center;
+  }
+  nav .logo .fas {
+    font-size: 5rem;
   }
   nav ul {
     position: fixed;
@@ -156,6 +159,12 @@ nav ul li a:hover {
   background-color: blanchedalmond;
   padding: 2rem 10rem;
   position: fixed;
+}
+
+@media (max-width: 768px) {
+  .sticky .icon {
+    color: azure;
+  }
 }
 
 header {
@@ -237,6 +246,35 @@ header p:hover::after {
     width: auto;
     height: 100rem;
   }
+}
+
+.fl_soc_ic {
+  position: fixed;
+  width: 5rem;
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+}
+
+.fl_soc_ic a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: inline;
+  letter-spacing: .3rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 4rem;
+  color: #222f3e;
+}
+
+.fl_soc_ic a:hover {
+  color: azure;
 }
 
 .icon {

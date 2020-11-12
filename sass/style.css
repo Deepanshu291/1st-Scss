@@ -126,7 +126,7 @@ header {
 
 header h1 {
   color: #222f3e;
-  font-size: 10rem;
+  font-size: 5rem;
   font-weight: bold;
   letter-spacing: 0.53rem;
   text-transform: uppercase;
@@ -134,7 +134,7 @@ header h1 {
 
 header h1:hover {
   color: azure;
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 header h1:hover::after {

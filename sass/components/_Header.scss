@@ -22,10 +22,10 @@ header{
     //3: Nesting.
 
     h1{
-       @include commntext(5rem,0.5rem, uppercase);////Calling Function with variable Font-size,Letter-spacing 
+       @include commntext(2rem,0.5rem, uppercase);////Calling Function with variable Font-size,Letter-spacing 
         &:hover{
             color: $Pr-text-hov;
-            font-size: 7rem;
+            font-size: 5rem;
             &::after{
                 content: " Sass/Scss";
             }
@@ -46,3 +46,4 @@ header{
       
     //This is Nesting 
 }//Sec-1
+

@@ -116,7 +116,7 @@ nav ul li a:hover {
     left: 0;
   }
   nav .logo {
-    font-size: 4rem;
+    font-size: 7rem;
     text-align: center;
   }
   nav .logo .fas {
@@ -277,6 +277,13 @@ header p:hover::after {
   color: azure;
 }
 
+@media (max-width: 768px) {
+  .fl_soc_ic a {
+    font-size: 8rem;
+    margin-bottom: 4rem;
+  }
+}
+
 .icon {
   color: #222f3e;
   font-size: 4rem;
@@ -317,11 +324,12 @@ header p:hover::after {
 @media (max-width: 768px) {
   .icon {
     display: block;
+    font-size: 5rem;
   }
   .icon .cancel-btn {
     position: absolute;
     top: 2rem;
-    right: 8rem;
+    right: 7.6rem;
   }
   .icon .cancel-btn i {
     font-size: 4rem;
@@ -360,7 +368,7 @@ html {
   }
 }
 
-@media (max-width: 508px) {
+@media (max-width: 578px) {
   html {
     font-size: 30%;
   }

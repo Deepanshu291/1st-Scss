@@ -75,9 +75,6 @@ nav ul li a:hover {
   .active {
     left: 0;
   }
-  nav {
-    top: 0;
-  }
   nav .logo {
     font-size: 4rem;
     text-align: center;
@@ -158,6 +155,12 @@ header p:hover {
 
 header p:hover::after {
   content: "SCSS/SASS.";
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 20vh;
+  }
 }
 
 .banner {

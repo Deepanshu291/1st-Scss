@@ -1,10 +1,22 @@
+//Function:-
+@mixin commntext($f-sz,$lt-sp,$tx-tr) //This is Pass the Variable
+{
+    color: $Pr-text-cl;
+    font-size: 5rem +$f-sz ; 
+    font-weight: bold;
+    letter-spacing: .03rem+$lt-sp;
+    text-transform: $tx-tr;
+}
+
 //Header:-
+
 
 header{
     width: 100%;
     height: 50vh;
     @include flexp(); // By _mixin.scss
     background-color: $bg-color;
+   //flex-wrap: wrap;
     flex-direction: column;
 
     //3: Nesting.
@@ -12,7 +24,7 @@ header{
     h1{
        @include commntext(5rem,0.5rem, uppercase);////Calling Function with variable Font-size,Letter-spacing 
         &:hover{
-            color: azure;
+            color: $Pr-text-hov;
             font-size: 7rem;
             &::after{
                 content: " Sass/Scss";
@@ -24,7 +36,7 @@ header{
      p{ 
         @include commntext(0,0, capitalize); //Calling Function.
         &:hover{
-            color: azure;
+            color: $Pr-text-hov;
             &::after{
                 content: "SCSS/SASS.";
             }

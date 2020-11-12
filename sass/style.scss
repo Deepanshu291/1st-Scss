@@ -11,12 +11,18 @@
 
 //  Use Partials :-
 
-@import "./common\ sass/mixin";
+@import "./common_sass/mixin";
 @import "./variables/var";
 
 //Components
 @import "./components/Navbar";
 @import "./components/Header";
+
+//Section
+@import "./Section/banner";
+
+//Common code.
+@import "./common_sass/button";
 
 *{
     margin: 0;
@@ -30,11 +36,14 @@ html{
 
 //All Sections:-
 
-.banner{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url('../assets/portfolio-1.jpg');
-    background-size: cover;
-  
-} 
+@media  (max-width: 768px){
+    html{
+       font-size: 40%; 
+    }
+}
+
+@media  (max-width: 508px){
+    html{
+       font-size: 30%; 
+    }
+}

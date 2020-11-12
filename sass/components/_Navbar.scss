@@ -1,10 +1,12 @@
 //Navbar
 
 .sticky{
-    background-color: blanchedalmond;
-    padding: 20px 100px;  
+    background-color: $nav-cl;
+    padding: 2rem 10rem;  
     position: fixed; 
 }
+
+
 
 nav{
     position: fixed;
@@ -16,25 +18,26 @@ nav{
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 30px 100px;
+    padding: 3rem 10rem;
     background-color: transparent;
-
+   
     .logo{
         position: relative;
         font-weight: bold;
-        color: black;
+        color: $Pr-text-cl;
         text-decoration: none;
-        font-size: 2em;
+        font-size: 2rem;
         text-transform: uppercase;
         transition: 0.6s;
         letter-spacing: 0.2rem;
     }
     ul{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+        
         li{
             position: relative;
             list-style: none;
@@ -44,13 +47,52 @@ nav{
                 position: relative;
                 margin: 1rem;
                 text-decoration: none;
-                color: black;
+                color: $Pr-text-cl;
                 letter-spacing: 0.2rem;
                 font-weight: 50rem;
                 transition: 0.6s;
 
                 &:hover{
-                    color: #576574;
+                    color: $Pr-text-hov;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+    .active{
+        left: 0;
+    }
+
+    nav{
+        .logo{
+            font-size: 4rem;
+            text-align: center;
+        }
+        ul{
+            // display: none;
+            position: fixed;
+            top: 0;
+            left: -100%;
+           // right: 0;
+           margin: .5rem;
+            display: block;
+            background: $nav-cl;
+            height: auto;
+            width: 100%;
+            max-width: 100rem;
+            padding: 4ren 0;
+            text-align: center;
+           
+            li{
+                margin-top: 5.5rem;
+                padding: 0 5rem;
+                margin-bottom: 5.5rem;
+
+                a{
+                   font-size: 5rem;
                 }
             }
         }

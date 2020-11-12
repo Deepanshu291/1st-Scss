@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./sass/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
     <title>Simple Sass Project</title>
 </head>
 <body>
@@ -11,19 +13,44 @@
         <a href="#" class="logo">Logo</a>
         <!-- ul>li*3>a -->
         <ul>
+            <div class="icon cancel-btn" onclick="Cancel()">
+               <i class="fas fa-times" ></i> 
+             </div>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
+            <div class="social">
+                <li><i class="fas fa-facebook" ></i></li>
+                <li><i class="fas fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fas fa-twitter" aria-hidden="true"></i></li>
+            </div>
+
         </ul>
+       <div class="icon " onclick="menuclick()">
+        <i class="fas fa-bars" aria-hidden="true"></i>   
+     </div>
+     
     </nav>
+    
+    <section class="banner">
+     
+    </section>
     <header >
         <h1>Welcome Its </h1>
         <p>We’ve updated to </p>
     </header>
    
-    <section class="banner">
+    <script>
+        const menu = document.querySelector("ul");
 
-    </section>
+    function menuclick() {
+    menu.classList.add("active");
+    }
+    function Cancel() {
+        menu.classList.remove("active");
+    }
+
+    </script>
 
     <script src="./main.js"></script>
 </body>

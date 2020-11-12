@@ -4,7 +4,8 @@
 
     .active{
         //bottom: 0;
-        left: 0;
+        //left: 0;
+        right: 0;
     }
 
     nav{
@@ -22,16 +23,16 @@
             position: fixed;
             top: 0;
             //bottom: 100%;
-            left: -110%;
-            right: 0;
+           // left: -110%;
+            right: -100%;
             margin: .5rem;
             // display: block;
             @include flexp(inline);
             background: $nav-cl;
             height: auto;
             width: 100%;
-            max-width: 100rem;
-            padding: 4ren 0;
+            max-width: 100vw;
+            //padding: 4rem 0;
             text-align: center;
            
             li{

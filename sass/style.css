@@ -75,6 +75,9 @@ nav ul li a:hover {
   .active {
     left: 0;
   }
+  nav {
+    top: 0;
+  }
   nav .logo {
     font-size: 4rem;
     text-align: center;
@@ -126,7 +129,7 @@ header {
 
 header h1 {
   color: #222f3e;
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: bold;
   letter-spacing: 0.53rem;
   text-transform: uppercase;
@@ -186,9 +189,30 @@ header p:hover::after {
   right: 3rem;
 }
 
+.social {
+  width: 100%;
+  color: azure;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
 @media (max-width: 768px) {
   .icon {
     display: block;
+  }
+  .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: black;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 5rem;
   }
 }
 

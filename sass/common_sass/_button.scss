@@ -14,8 +14,24 @@
     }
 }
 
+.social{
+    width: 100%;
+    color: $Pr-text-hov;
+    font-size: 1rem;
+    cursor: pointer;
+     display: none;
+} 
+
 @media (max-width:768px){
      .icon{
          display: block;
      } 
+
+     .social{
+        display: flex;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+    }
 }

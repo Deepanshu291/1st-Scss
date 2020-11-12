@@ -1,37 +1,48 @@
 
-
+//Menu Icon & Cancel Icon
 .icon{
     color: $Pr-text-cl;
     font-size: 4rem;
     cursor: pointer;
-    display: none;
+   // display: none;
+   @include flexp(none);
 
     .cancel-btn{
        position: absolute;
        top: 2rem;
-       right: 3rem;
+       
        
     }
 }
+
+//Social Media Icon in Mobile Navbar.
 
 .social{
     width: 100%;
     font-size: 1rem;
     left: 0;
     cursor: pointer;
-    display: none;
-    color: black;
-    justify-content: center;
-    align-items: center;
+    //display: none;
+    // color: black;
+    // justify-content: center;
+    // align-items: center;
+    @include flexp(none);
 
      a{
         color: $Pr-text-cl;
      }
 } 
 
+
+//Mobile Responsive
+
 @media (max-width:768px){
      .icon{
          display: block;
+
+         .cancel-btn{
+             font-size: 3rem;
+         }
      } 
 
      .social{

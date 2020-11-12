@@ -160,7 +160,7 @@ header p:hover::after {
 
 @media (max-width: 768px) {
   header {
-    height: 20vh;
+    height: 35vh;
   }
 }
 

@@ -116,11 +116,11 @@ nav ul li a:hover {
     right: 0;
   }
   nav .logo {
-    font-size: 7rem;
+    font-size: 6rem;
     text-align: center;
   }
   nav .logo .fas {
-    font-size: 5rem;
+    font-size: 7rem;
   }
   nav ul {
     position: fixed;

@@ -37,7 +37,6 @@ nav{
          justify-content: center;
          align-items: center;
          
-         
         
         li{
             position: relative;
@@ -61,8 +60,6 @@ nav{
     }
 }
 
-//Responsive Navbar Code 
-
 @media (max-width: 768px){
 
     .active{
@@ -78,10 +75,10 @@ nav{
             // display: none;
             position: fixed;
             top: 0;
-            left: -100%;
-           // right: 0;
+            left: -110%;
+            right: 0;
             margin: .5rem;
-            display: block; //Show in Column Wise
+            display: block;
             background: $nav-cl;
             height: auto;
             width: 100%;
@@ -89,8 +86,6 @@ nav{
             padding: 4ren 0;
             text-align: center;
            
-            
-
             li{
                 margin-top: 5.5rem;
                 padding: 0 5rem;

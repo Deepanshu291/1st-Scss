@@ -14,14 +14,38 @@ nav{
     background-color: transparent;
    
     .logo{
+        display: flex;
         position: relative;
         font-weight: bold;
+       // margin-right: 1rem;
         color: $Pr-text-cl;
+        align-items: center;
         text-decoration: none;
         font-size: 3rem;
         text-transform: uppercase;
-        transition: 0.6s;
+        transition: 1s;
         letter-spacing: 0.2rem;
+        animation: logo 1s linear infinite;
+        animation-direction: alternate;
+        
+        &:hover{
+            color: $Pr-text-hov;
+        }
+
+        .fas{
+            font-size: 3rem;
+            align-items: center;
+        }
+
+        @keyframes logo {
+            from{
+                transform: rotate(3deg);
+            }
+
+            to{
+                transform: rotate(-3deg);
+            }
+        }
     }
     ul{
          position: relative;
@@ -44,6 +68,8 @@ nav{
 
                 &:hover{
                     color: $Pr-text-hov;
+
+                    
                 }
             }
         }

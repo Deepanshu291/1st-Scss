@@ -20,15 +20,58 @@ nav {
 }
 
 nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   font-weight: bold;
   color: #222f3e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   font-size: 3rem;
   text-transform: uppercase;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 1s;
+  transition: 1s;
   letter-spacing: 0.2rem;
+  -webkit-animation: logo 1s linear infinite;
+          animation: logo 1s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+nav .logo:hover {
+  color: azure;
+}
+
+nav .logo .fas {
+  font-size: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes logo {
+  from {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  to {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+}
+
+@keyframes logo {
+  from {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  to {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
 }
 
 nav ul {
@@ -43,8 +86,8 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   letter-spacing: .3rem;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 nav ul li {
@@ -72,7 +115,7 @@ nav ul li a:hover {
   .active {
     left: 0;
   }
-  nav .logo {
+  nav .logo i {
     font-size: 4rem;
     text-align: center;
   }
@@ -90,8 +133,8 @@ nav ul li a:hover {
             justify-content: center;
     display: inline;
     letter-spacing: .3rem;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
+    -webkit-transition: 1s;
+    transition: 1s;
     background: blanchedalmond;
     height: auto;
     width: 100%;
@@ -128,8 +171,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   letter-spacing: .3rem;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 1s;
+  transition: 1s;
   background-color: #10ac84;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -143,8 +186,8 @@ header h1 {
   font-weight: bold;
   letter-spacing: 0.53rem;
   text-transform: uppercase;
-  -webkit-transition: 00.6s;
-  transition: 00.6s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 header h1:hover {
@@ -162,8 +205,8 @@ header p {
   font-weight: bold;
   letter-spacing: 0.03rem;
   text-transform: capitalize;
-  -webkit-transition: 00.6s;
-  transition: 00.6s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 header p:hover {
@@ -208,13 +251,8 @@ header p:hover::after {
           justify-content: center;
   display: none;
   letter-spacing: .3rem;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.icon .cancel-btn {
-  position: absolute;
-  top: 2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .social {
@@ -230,8 +268,8 @@ header p:hover::after {
           justify-content: center;
   display: none;
   letter-spacing: .3rem;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .social a {
@@ -243,12 +281,26 @@ header p:hover::after {
     display: block;
   }
   .icon .cancel-btn {
-    font-size: 3rem;
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+  }
+  .icon .cancel-btn i {
+    font-size: 4rem;
   }
   .social {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    letter-spacing: .3rem;
+    -webkit-transition: 1s;
+    transition: 1s;
     font-size: 5rem;
   }
 }
